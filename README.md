@@ -76,7 +76,7 @@ sudo mysql -u root -p
 2. Create a new user and grant access:
 
 ```sql
-CREATE USER 'dbuser'@'%' IDENTIFIED BY 'password';
+CREATE USER 'lemssel'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'dbuser'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
@@ -146,15 +146,6 @@ Expected result:
 +----+-------+
 ```
 
----
-
-## 🔒 Security Best Practices
-- Do **not** expose port 3306 to the public internet unless necessary.  
-- Use **private IPs** for communication within the VPC.  
-- Implement **SSL encryption** for secure data transfer.  
-- Use **strong passwords** for database users.  
-
----
 
 ## 📌 Conclusion
-You have successfully implemented a **client-server architecture using MySQL DBMS on AWS EC2**. This setup can be extended to more complex applications where web servers, app servers, and databases communicate securely in a distributed environment.
+You have successfully implemented a simple **client-server architecture using MySQL DBMS on AWS EC2**.
